@@ -135,6 +135,7 @@ public:
         }
         vector<int> next(s.size());
         getNext(&next[0],s);
+        // 因为s要构成一个S，则首尾一定是存在一个s的
         if(next[s.size() - 1] != 0 && (s.size() % (s.size() - next[s.size() - 1]))==0){
             return true;
         }

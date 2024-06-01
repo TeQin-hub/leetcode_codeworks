@@ -55,6 +55,8 @@ vector<int> preOrderTraversal(TreeNode* root){
 
 ### 前序遍历
 
+中左右
+
 ```c++
 vector<int> preOrderTraversal(TreeNode* root){
     vector<int> result;
@@ -95,6 +97,8 @@ vector<int> preOrderTraversal(TreeNode* root){
 
 ### 后序遍历
 
+先中右左，在reverse后变为左右中
+
 ```c++
 vector<int> postOrderTraversal(TreeNode* root){
     vector<int> result;
@@ -105,8 +109,8 @@ vector<int> postOrderTraversal(TreeNode* root){
         TreeNode* node = st.top();
         st.pop();
         result.push_back(node->val);
-        if(node->right) st.push(node->right);
         if(node->left) st.push(node->left);
+        if(node->right) st.push(node->right);
     }
     reverse(result.begin(),result.end());
     return result;

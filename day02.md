@@ -73,6 +73,12 @@ public:
 };
 ```
 
+推荐题目
+
+https://leetcode.cn/problems/fruit-into-baskets/description/
+
+https://leetcode.cn/problems/minimum-window-substring/description/
+
 ## 59 螺旋矩阵
 
 ### 边界
@@ -137,3 +143,5 @@ public:
 - 注意每一轮此的边界
 - 注意保存每一轮此需要保留的变量，可能是函数最终需要返回的值
 - 双指针思想：多个读指针，一个写指针
+
+![image-20240418164822166](day02.assets/image-20240418164822166.png)
